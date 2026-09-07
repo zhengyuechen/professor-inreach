@@ -1,0 +1,26 @@
+{
+  "name": "professor-inreach",
+  "version": "0.1.0+codex.20260907024232",
+  "description": "Find potential PhD supervisors, compare sourced faculty information, and draft thoughtful outreach emails.",
+  "author": {
+    "name": "Jeremy Chen"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Professor InReach",
+    "shortDescription": "Find your research fit. Start the conversation.",
+    "longDescription": "Use your CV, project experience, and intended PhD topic to find potential supervisors. Compare sourced research, citation counts, academic titles, listed students, and recruiting statements, then draft a personal email.",
+    "developerName": "Jeremy Chen",
+    "category": "Productivity",
+    "capabilities": [
+      "Read"
+    ],
+    "brandColor": "#16675D",
+    "defaultPrompt": [
+      "Use my CV and research interests to find PhD supervisors.",
+      "Compare these professors' research, groups, and recruiting.",
+      "Draft an email explaining my fit with this professor."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

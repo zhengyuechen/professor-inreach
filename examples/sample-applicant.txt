@@ -1,0 +1,20 @@
+FICTIONAL APPLICANT — for testing only
+
+Name: Alex Morgan
+Current role: Final-year bachelor's student in physics
+PhD interest: Experimental frustrated magnetism and spin-liquid dynamics
+Target intake: Fall 2027
+Countries: United States
+
+Project: Magnetic-noise analysis
+Individual contribution: Wrote Python routines to estimate power spectral density from simulated time series and compare fitted exponents under different noise levels.
+Methods used: Python, NumPy, SciPy, Fourier transforms, least-squares fitting.
+Outcome: Compared the stability of exponent estimates across simulated noise conditions.
+Limits: No publication; has not operated a SQUID magnetometer and has not claimed experimental discovery.
+
+Project: Reading project on frustrated magnets
+Individual contribution: Prepared a seminar comparing classical frustration on triangular and diamond lattices.
+Outcome: Presented a literature overview to a student group.
+
+Future interests: Learn magnetometry and scattering methods; connect computational analysis with experimental data.
+Preference: Prioritize research fit; show citations as a separate comparison field.
