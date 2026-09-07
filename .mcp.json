@@ -1,10 +1,11 @@
 {
   "mcpServers": {
     "professor-inreach": {
-      "command": "/Users/jeremychen/.nvm/versions/node/v26.4.0/bin/node",
+      "command": "node",
+      "cwd": ".",
       "args": [
-        "--env-file-if-exists=/Users/jeremychen/My Drive/Ran's Lab/projects/professor-inreach/.env",
-        "/Users/jeremychen/My Drive/Ran's Lab/projects/professor-inreach/dist/index.js",
+        "--env-file-if-exists=.env",
+        "./dist/index.js",
         "--stdio"
       ]
     }

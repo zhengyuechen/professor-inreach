@@ -1,7 +1,5 @@
 # Professor InReach
 
-Project location: `/Users/jeremychen/My Drive/Ran's Lab/projects/professor-inreach`
-
 **Find your research fit. Start the conversation.**
 
 A first working ChatGPT/Codex plugin for prospective PhD applicants:
@@ -35,7 +33,7 @@ Only the first 50 relevant papers and up to 40 author records are examined per d
 
 ## Run the server
 
-Use Node.js 22 or newer; `.nvmrc` selects Node 24. This machine's local plugin wiring uses the already-installed Node 26 executable because its default terminal startup selects an older Node version.
+Use Node.js 22 or newer; `.nvmrc` selects Node 24. Run these commands from the repository root. Build before installing the local plugin so its installed copy includes `dist/` and `node_modules/`.
 
 ```sh
 npm ci
@@ -60,7 +58,7 @@ Run outputs are stored in dated subfolders of `results/`.
 
 See [Connect to ChatGPT](summary/CONNECT-TO-CHATGPT.md). A ChatGPT cloud connection needs a reachable HTTPS endpoint or a supported private development tunnel; a local folder or localhost URL alone does not connect the server to ChatGPT on the web. This project has not been publicly hosted or submitted for review.
 
-The local `.mcp.json` deliberately points to this checkout and this machine's Node executable. It is a development configuration, not a portable public distribution. A symlink in `~/plugins/professor-inreach` makes this checkout discoverable through the personal marketplace; the source remains in your projects folder.
+The local `.mcp.json` runs `node` from `PATH` and sets `cwd` to `.`, which Codex resolves relative to the installed plugin folder. The `.env` and `./dist/index.js` paths are relative to that folder, so the checkout can live anywhere. Ensure the host can find Node.js 22 or newer on `PATH`. Local installation copies the built plugin; rebuild and reinstall after source or `.env` changes. If your personal marketplace uses a symlink to the checkout, update that symlink when moving the checkout.
 
 ## Files
 

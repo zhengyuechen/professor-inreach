@@ -21,10 +21,10 @@ The project has a valid local plugin manifest, personal-marketplace registration
 
 Start a new local chat, invoke Professor InReach and attach the fictional applicant in `examples/`. Evaluate shortlist quality and an email draft, then connect a hosted or tunneled endpoint to ChatGPT for web testing. Website searches currently use host web search unless an optional Brave key is configured.
 
-The organizer mentioned in the parent AGENTS.md is absent from this workspace; typed folders were applied directly. The local MCP configuration is intentionally machine-specific. Public distribution uses the hosted endpoint plus the shareable workflow bundle, not that local configuration.
+The organizer mentioned in the parent AGENTS.md is absent from this workspace; typed folders were applied directly. Public ChatGPT distribution uses the hosted endpoint plus the shareable workflow bundle.
 
 ## Relocation
 
-Moved at the user's request to `/Users/jeremychen/My Drive/Ran's Lab/projects/research-agents/professor-inreach`. Local MCP launch paths and the personal-marketplace symlink now point to this location.
+The checkout moved first inside `research-agents/`, then alongside it under the projects folder. Local registration was updated after each move.
 
-During GitHub setup the source was found at `/Users/jeremychen/My Drive/Ran's Lab/projects/professor-inreach`. Local registration was updated to this current location.
+The launch configuration now uses `node` from `PATH`, `cwd: "."` resolved by Codex against the installed plugin folder, and relative `.env` and server-entry paths. No username, home directory, or Node installation path is embedded in the repository configuration.
